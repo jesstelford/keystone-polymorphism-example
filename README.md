@@ -1,15 +1,9 @@
-# KeystoneJS Blank Starter Template
+# Polymorphic Keystone Queries
 
-You've created a KeystoneJS project! This project contains an AdminUI and GraphQL App.
+By default, Keystone does not support the ability to query in a polymorphic way. Ie; it cannot return an array of results which each element being of a different type.
 
-You probably want to add Lists, Authentication, Access control and a front-end application.
+GraphQL does provide the `Union` type however, so we can leverage that by extending our Keystone's GraphQL API.
 
-## Running the Project.
+Check out [`index.js`](./index.js) for the complete example.
 
-To run this project first run `npm install`. Note: If you generated this project via the Keystone cli step this has been done for you \\o/.
-
-Once running the Keystone Admin UI is reachable via: `localhost:3000/admin`.
-
-## Next steps
-
-This example has no front-end application but you can build your own using the GraphQL API (`http://localhost:3000/admin/graphiql`).
+![Example usage](./polymorphism.gif)
